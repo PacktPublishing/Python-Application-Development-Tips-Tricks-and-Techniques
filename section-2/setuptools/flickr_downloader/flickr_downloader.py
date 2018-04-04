@@ -8,8 +8,8 @@ logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 
 
-def __get_photo_list():
-    url = "https://api.flickr.com/services/rest/?method=flickr.interestingness.getList&api_key=%s&format=json&nojsoncallback=1" % os.environ["FLICKR_API_KEY"]
+def __get_photo_list(api_key):
+    url = "https://api.flickr.com/services/rest/?method=flickr.interestingness.getList&api_key=%s&format=json&nojsoncallback=1" % api_key
 
     res = requests.get(url).json()
 
@@ -29,8 +29,8 @@ def __save_photo(_photo, _photo_content, location):
         photo_file.write(_photo_content)
 
 
-def download_interesting_photos(location):
-    photos_list_res = __get_photo_list()
+def download_interesting_photos(flickr_api_key, location):
+    photos_list_res = __get_photo_list(flickr_api_key)
 
     photo_list = photos_list_res["photos"]["photo"]
 
