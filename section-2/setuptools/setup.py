@@ -6,7 +6,7 @@ with open("README.md", "r") as readme_file:
 
 setup(
     name="flickr_downloader",
-    version="1.0.0",
+    version="1.0.0-dev2",
     description="Python package that downloads 100 interesting photos from Flickr",
     long_description=long_description,
     long_description_content_type="text/markdown",
