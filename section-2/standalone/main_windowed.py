@@ -1,3 +1,6 @@
+# You need PyGObject to run this application
+# See install instructions at https://pygobject.readthedocs.io/en/latest/getting_started.html
+
 import gi
 import os
 gi.require_version("Gtk", "3.0")

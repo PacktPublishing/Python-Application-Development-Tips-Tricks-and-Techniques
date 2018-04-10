@@ -11,7 +11,6 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     author="Mihai Costea",
-    author_email="mihai@mcostea.com",
     license="MIT",
     classifiers=[
         "Development Status :: 4 - Beta",
