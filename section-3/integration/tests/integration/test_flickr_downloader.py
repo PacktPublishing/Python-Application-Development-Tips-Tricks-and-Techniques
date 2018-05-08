@@ -24,6 +24,8 @@ class TestFlickrDownloaderIntegration(object):
 
         downloader.download_interesting_photos()
 
+        assert len(os.listdir(tmpdir)) == 100
+        
         for file in os.listdir(tmpdir):
             filename = os.fsdecode(file)
             assert filename.endswith(".jpg")
