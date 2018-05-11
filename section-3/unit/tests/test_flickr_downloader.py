@@ -156,7 +156,7 @@ class TestFlickrDownloader(object):
         # Mock the downloader class
         get_photo_list_mock = mocker.patch.object(FlickrDownloader, "get_photo_list")
         download_photo_mock = mocker.patch.object(FlickrDownloader, "download_photo")
-        save_photo_mock = mocker.patch.object(FlickrDownloader, "_FlickrDownloader__save_photo")
+        save_photo_mock = mocker.patch.object(FlickrDownloader, "save_photo")
 
         get_photo_list_mock.return_value = photos_list_mock
         download_photo_mock.return_value = "photo content"
