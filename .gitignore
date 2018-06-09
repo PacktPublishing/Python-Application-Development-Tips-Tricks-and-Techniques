@@ -81,3 +81,4 @@ node_modules/
 *downloaded/
 .DS_Store
 profiling_results
+workdir/
