@@ -84,5 +84,5 @@ profiling_results
 workdir/
 .ipynb_checkpoints/
 .scannerwork/
-junit-report.xml
+junit-result.xml
 .mypy_cache/
