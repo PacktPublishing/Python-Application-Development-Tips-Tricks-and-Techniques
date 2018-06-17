@@ -83,3 +83,6 @@ node_modules/
 profiling_results
 workdir/
 .ipynb_checkpoints/
+.scannerwork/
+junit-report.xml
+
