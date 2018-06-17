@@ -85,4 +85,4 @@ workdir/
 .ipynb_checkpoints/
 .scannerwork/
 junit-report.xml
-
+.mypy_cache/
